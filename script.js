@@ -80,4 +80,47 @@ let progress4 = setInterval(() => {
     console.log(sassProgressStartValue)
 }, sassSpeed);
 
-//
+//tailwind progress
+
+
+let tailwindProgress = document.querySelector(".tailwind-progress"),
+tailwindValue = document.querySelector(".tailwind-value");
+
+let tailwindProgressStartValue = 0,
+ tailwindProgressEndtValue = 8,
+tailwindSpeed = 150;
+
+let progress5 = setInterval(() => {
+    tailwindProgressStartValue++;
+
+    tailwindValue.textContent = `${tailwindProgressStartValue}%`
+    tailwindProgress.style.background = `conic-gradient(blueviolet ${tailwindProgressStartValue * 3.6}deg, #e6e6e6 0deg)`
+
+    if(tailwindProgressStartValue == tailwindProgressEndtValue){
+        clearInterval(progress5);
+    }
+    console.log(tailwindProgressStartValue)
+}, tailwindSpeed);
+
+//JavaScript progress
+
+
+let jsProgress = document.querySelector(".js-progress"),
+jsValue = document.querySelector(".js-value");
+
+let jsProgressStartValue = 0,
+ jsProgressEndtValue = 12,
+jsSpeed = 150;
+
+let progress6 = setInterval(() => {
+    jsProgressStartValue++;
+
+    jsValue.textContent = `${jsProgressStartValue}%`
+    jsProgress.style.background = `conic-gradient(blueviolet ${jsProgressStartValue * 3.6}deg, #e6e6e6 0deg)`
+
+    if(jsProgressStartValue == jsProgressEndtValue){
+        clearInterval(progress6);
+    }
+    console.log(jsProgressStartValue)
+}, jsSpeed);
+
