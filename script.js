@@ -44,7 +44,7 @@ let bootstrapProgress = document.querySelector(".bootstrap-progress"),
 bootstrapValue = document.querySelector(".bootstrap-value");
 
 let bootstrapProgressStartValue = 0,
- bootstrapProgressEndtValue = 10,
+ bootstrapProgressEndtValue = 65,
 bootstrapSpeed = 150;
 
 let progress3 = setInterval(() => {
@@ -65,7 +65,7 @@ let sassProgress = document.querySelector(".sass-progress"),
 sassValue = document.querySelector(".sass-value");
 
 let sassProgressStartValue = 0,
- sassProgressEndtValue = 5,
+ sassProgressEndtValue = 75,
 sassSpeed = 150;
 
 let progress4 = setInterval(() => {
